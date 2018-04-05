@@ -17,6 +17,7 @@ var saveNotes = (notes) => {
 
 
 
+
 var addNote = (title, body) => {
   var notes = fetchNotes();
   var note = {
@@ -34,7 +35,7 @@ var addNote = (title, body) => {
 
 
 var getAll = () => {
-  console.log('getting all notes')
+  return fetchNotes();
 }
 
 var removeNote = (title) => {
